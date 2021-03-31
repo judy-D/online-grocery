@@ -14,18 +14,9 @@ import Products from "./components/Products/Products";
 import Cart from "./components/Cart/Cart";
 import SingleItem from "./components/SingleItem/SingleItem";
 
-let routerBaseName;
-
-if (process.env.NODE_ENV !== 'production') {
-  routerBaseName = process.env.DEV_URL;
-} else {
-  routerBaseName = process.env.PUBLIC_URL;
-
-}
-
 function App({ current }) {
   return (
-    <Router basename={routerBaseName} >
+    <Router >
       <div className="app">
         <Navbar />
         <Switch>
