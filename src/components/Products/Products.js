@@ -9,7 +9,7 @@ const Products = ({ products }) => {
 
   return (
     <div className={styles.products}>
-      {products && products.map((product) => (
+      {products.map((product) => (
         <Product key={product.id} product={product} />
       ))}
     </div>
